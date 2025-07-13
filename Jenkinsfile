@@ -22,7 +22,7 @@ pipeline {
 
     stage('Push to DockerHub') {
       steps {
-        withDockerRegistry(credentialsId: 'dockerhub-credentials', url: '') {
+        withDockerRegistry(credentialsId: 'adrian-credentials', url: '') {
           script {
             dockerImage.push()
           }
