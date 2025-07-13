@@ -1,18 +1,40 @@
 pipeline {
   agent any
 
+  environment {
+    DOCKER_IMAGE = "sadrian88/aromauto:latest"
+  }
+
   stages {
-    stage('Checkout cod') {
+    stage('Checkout') {
       steps {
-        git 'https://github.com/sadrian88/aromauto.git'
+        git url: 'https://github.com/sadrian88/aromauto.git'
       }
     }
 
-    stage('Test modificări') {
+    stage('Build Docker Image') {
       steps {
-        echo 'Am luat ultima versiune din GitHub!'
-        sh 'ls -la' // Doar să vedem ce fișiere sunt
+        script {
+          dockerImage = docker.build("${DOCKER_IMAGE}")
+        }
+      }
+    }
+
+    stage('Push to DockerHub') {
+      steps {
+        withDockerRegistry(credentialsId: 'dockerhub-credentials', url: '') {
+          script {
+            dockerImage.push()
+          }
+        }
+      }
+    }
+
+    stage('Deploy to Kubernetes') {
+      steps {
+        sh 'kubectl rollout restart deployment nginx-deployment'
       }
     }
   }
 }
+
