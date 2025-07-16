@@ -3,53 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AromAuto - Odorizante Personalizate</title>
-  <link rel="icon" href="img/favicon.ico" />
+  <title>AromAuto - Odorizante Auto Personalizate</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/bradut.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">🏠 Home</a></li>
-      <li><a href="produse.html">🛍️ Produse</a></li>
-      <li><a href="despre.html">ℹ️ Despre</a></li>
-      <li><a href="contact.html">📞 Contact</a></li>
-    </ul>
-  </nav>
 
-  <header class="hero">
-    <h1>AromAuto</h1>
-    <p>Odorizante auto personalizate, printate 3D</p>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="img/bradut.png" alt="AromAuto" />
+      <span>AromAuto</span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="produse.html">Produse</a>
+      <a href="despre.html">Despre</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a href="contact.html" class="buy-btn">Comandă Acum</a>
+    </div>
   </header>
 
-  <section id="produse">
-    <h2>⭐ Favoritele clienților</h2>
-    <div class="product-list">
-      <div class="product">
-        <img src="img/blackclassic.png" alt="blackclassic" />
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Odorizante auto printate 3D</h1>
+      <p>Transformă mirosul mașinii tale cu produse personalizate, create cu atenție la detalii.</p>
+      <a href="contact.html" class="hero-btn">Contactează-ne</a>
+    </div>
+    <div class="hero-image">
+      <img src="img/bradut-hero.png" alt="Odorizant Auto" />
+    </div>
+  </section>
+
+  <!-- PRODUSE -->
+  <section class="produse-acasa">
+    <h2>Favoritele clienților</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="img/blackclassic.png" alt="Black Classic" />
         <h3>Black Classic</h3>
       </div>
-      <div class="product">
-        <img src="img/grunerapfel.png" alt="grunerapfel" />
+      <div class="product-card">
+        <img src="img/grunerapfel.png" alt="Grüner Apfel" />
         <h3>Grüner Apfel</h3>
       </div>
-      <div class="product">
-        <img src="img/pinacolada.png" alt="pinacolada" />
+      <div class="product-card">
+        <img src="img/pinacolada.png" alt="Piña Colada" />
         <h3>Piña Colada</h3>
       </div>
-      <div class="product">
-        <img src="img/vanillaroma.png" alt="vanillaroma" />
+      <div class="product-card">
+        <img src="img/vanillaroma.png" alt="Vanillaroma" />
         <h3>Vanillaroma</h3>
       </div>
     </div>
-    <button onclick="alert('Formular de comandă în curând 🚀')">Comandă acum</button>
+    <a href="contact.html" class="hero-btn">Comandă acum</a>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 AromAuto | Contact: <a href="mailto:contact@aromauto.ro">contact@aromauto.ro</a></p>
+    <p>© 2025 AromAuto | contact@aromauto.ro</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
