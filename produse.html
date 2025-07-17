@@ -4,37 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Produse – AromAuto</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
+<body class="is-preload">
+  <div id="page-wrapper">
 
-  <header class="main-header">
-    <div class="logo"><img src="img/bradut.png" alt="AromAuto"/><span>AromAuto</span></div>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="produse.html">Produse</a>
-      <a href="despre.html">Despre</a>
-      <a href="contact.html">Contact</a>
+    <!-- Header -->
+    <header id="header" class="alt">
+      <h1>
+        <a href="index.html">
+          <img src="images/bradut.png" alt="AromAuto" style="height: 28px; vertical-align: middle; margin-right: 8px;" />
+          AromAuto
+        </a>
+      </h1>
+      <nav><a href="#menu">Meniu</a></nav>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+      <div class="inner">
+        <h2>Meniu</h2>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produse.html">Produse</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="close">Închide</a>
+      </div>
     </nav>
-    <div class="header-right"><a href="contact.html" class="buy-btn">Comandă Acum</a></div>
-  </header>
 
-  <section class="produse-acasa">
-    <h2>Gama completă de produse</h2>
-    <div class="product-grid">
-      <div class="product-card"><img src="img/blackclassic.png" alt="Black Classic"/><h3>Black Classic</h3></div>
-      <div class="product-card"><img src="img/grunerapfel.png" alt="Grüner Apfel"/><h3>Grüner Apfel</h3></div>
-      <div class="product-card"><img src="img/pinacolada.png" alt="Piña Colada"/><h3>Piña Colada</h3></div>
-      <div class="product-card"><img src="img/vanillaroma.png" alt="Vanillaroma"/><h3>Vanillaroma</h3></div>
-      <!-- adaugă carduri noi după nevoie -->
-    </div>
-  </section>
+    <!-- Content -->
+    <section class="wrapper">
+      <div class="inner">
+        <h2 class="major">Gama completă de produse</h2>
+        <div class="features">
+          <article>
+            <img src="images/blackclassic.png" alt="Black Classic" />
+            <h3>Black Classic</h3>
+          </article>
+          <article>
+            <img src="images/grunerapfel.png" alt="Grüner Apfel" />
+            <h3>Grüner Apfel</h3>
+          </article>
+          <article>
+            <img src="images/pinacolada.png" alt="Piña Colada" />
+            <h3>Piña Colada</h3>
+          </article>
+          <article>
+            <img src="images/vanillaroma.png" alt="Vanillaroma" />
+            <h3>Vanillaroma</h3>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 AromAuto | contact@aromauto.ro</p>
-  </footer>
+    <!-- Footer -->
+    <section id="footer">
+      <div class="inner">
+        <h2 class="major">Contact AromAuto</h2>
+        <p>Scrie-ne pe <strong>contact@aromauto.ro</strong> sau contactează-ne pe social media.</p>
+        <ul class="contact">
+          <li class="icon solid fa-envelope"><a href="mailto:contact@aromauto.ro">contact@aromauto.ro</a></li>
+          <li class="icon brands fa-instagram"><a href="#">@aromauto.ro</a></li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; 2025 AromAuto. Toate drepturile rezervate.</li>
+        </ul>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
+  </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-
