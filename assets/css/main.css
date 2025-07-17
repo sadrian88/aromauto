@@ -3085,8 +3085,6 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
-		padding-top: 8px;
-        overflow: visible;
 	}
 
 		#header h1 {
