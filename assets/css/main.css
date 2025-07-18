@@ -3097,6 +3097,7 @@ input, select, textarea {
 			margin-bottom: 0;
 			opacity: 1;
 			visibility: visible;
+			display: none;
 		}
 
 			#header h1 a {
