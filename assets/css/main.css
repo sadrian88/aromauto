@@ -3165,6 +3165,24 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.075);
 					}
 
+					#header nav a[href="#menu"] {
+						display: flex;
+						align-items: center;
+						gap: 0.5em;
+					  }
+					  
+					  #header nav a[href="#menu"]::before {
+						order: 2;
+						margin-left: 0.25em;
+						font-size: 1.2em;
+					  }
+					  
+					  #header nav a[href="#menu"] .label {
+						order: 1;
+						display: inline-block;
+					  }
+					  
+
 		#header.alt {
 			background-color: transparent;
 		}
