@@ -2421,6 +2421,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 5px;
 			display: block;
+			cursor: default;
 		}
 
 		.image.left, .image.right {
@@ -3185,6 +3186,7 @@ input, select, textarea {
 
 		#header.alt {
 			background-color: transparent;
+			position: fixed;
 		}
 
 			#header.alt h1 {
@@ -4175,3 +4177,9 @@ input, select, textarea {
 		}
 
 	}
+
+	.product img {
+		cursor: pointer;
+	}
+	  
+	
